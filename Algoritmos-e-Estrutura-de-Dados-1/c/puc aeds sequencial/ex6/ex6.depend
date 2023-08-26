@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1679156528 source:d:\projectos\ex6\main.c
+	<stdio.h>
+	<stdlib.h>
+
