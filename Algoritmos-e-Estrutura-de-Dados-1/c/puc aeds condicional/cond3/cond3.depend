@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1678989700 source:d:\puc aeds\cond3\main.c
+	<stdio.h>
+	<stdlib.h>
+
