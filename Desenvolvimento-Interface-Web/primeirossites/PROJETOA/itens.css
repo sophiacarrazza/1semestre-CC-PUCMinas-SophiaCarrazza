@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(241, 238, 210);
+    color:rgb(49, 15, 77);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+}
+
+h1{
+    color:indianred;
+    font-family:fantasy;
+    img{
+    width:400px
+    }
+ 
+}
+
+img{
+    width:750px
+    }
+/* como só tem uma imagem, essa linha d codigo pode estar fora do body, 
+mas se tivesse mais de uma, teria q ser mais especifico com qual imagem 
+c ta falando, ai nesse caso eh melhor usar uma classe */

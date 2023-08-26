@@ -1,0 +1,201 @@
+
+/* CSS Definições Gerais - Inicio */
+html,body{
+    height: 100px;
+}
+
+body,ul,li,p {
+    margin:0px;
+    padding:0px;
+    font-size:1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+/* CSS Definições Gerais - Fim */
+
+
+/* CSS Cabecalho - Inicio */
+
+.header a{
+    text-decoration: none; 
+    color:#7f4ca1;
+    font-weight: bold;
+   
+
+}
+h1{
+    font-size: 120%;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+
+.header{
+    background: transparent;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+
+}
+
+.menu{
+    display:flex;
+}
+
+.menu li{
+    list-style: none;
+    margin-left:10px;
+}
+/* CSS Cabecalho - Fim */
+
+
+/* CSS Rodapé - Inicio */
+.footer{
+    background: #6a6c80;
+    display:flex;
+    color:white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+/* CSS Rodapé - Fim */
+
+
+/* Menu Mobile - Inicio */
+
+#menuToggle{
+    display:none;
+}
+#menu-icon{
+    display:none;
+}
+
+@media screen and (max-width:600px){
+    .header{
+        position:fixed;
+        top:0px;
+        width:100%;
+
+    }
+
+    .header nav{
+        display:absolute;
+        width:100%;
+        height:100%;
+    }
+    .menu{
+        display:flex;
+        position:fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:0%;
+        background: rgba(0,0,0,0.7);
+        overflow:hidden;
+
+        transition: height 0.3s;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -o-transition: height 0.3s;
+
+    }
+    .menu li{
+        display:block;
+        width:100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .menu li a{
+        display:block;
+        text-align:center;
+        width:100%;
+
+    }
+    .menu-icon{
+        display:block;
+        color:white;
+        width:50px;
+        height:inherit;
+        position:absolute;
+        top:15px;
+        right:30px;
+        line-height: 60px;
+        z-index: 999;
+    }
+    .menu-icon i{
+        font-size: 1.7em;
+
+    }
+    #menuToggle:checked ~ label i:nth(2){
+        display:block;
+
+    }
+    #menuToggle:checked ~ label i:first-child(){
+        display:none;
+    }
+    #menuToggle:not(checked) ~ label i:first-child(){
+            display:block;
+    
+    }
+    #menuToggle:checked ~ label i:nth(2){
+        display:none;
+
+    }
+    #menuToggle:checked ~ ul{
+        height:100%;
+
+    }
+
+}
+
+/* Menu Mobile - Fim */
+
+/* CSS Grid 1 - Inicio */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card{
+display:grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+grid-gap:10px;
+
+}
+
+.banner{
+    grid-column: 3;
+    grid-row: 2/5;
+}
+
+@media screen and (max-width:600px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .card{
+        display:block;
+    }
+    .card:nth-child(9){
+        display:none;
+    }
+    .banner{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+/* CSS Grid 1 - Fim */

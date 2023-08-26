@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "Item1 Item2 Item3"
+    "Item4 Item5 Item6";
+}
+.Item1 {
+    grid-area: Item1;
+
+}
+.Item2 {
+    grid-area: Item2;
+    
+}
+.Item3 {
+    grid-area: Item3;
+    
+}
+.Item4 {
+    grid-area: Item4;
+    
+}
+
+.Item5 {
+    grid-area: Item5;
+    
+}
+.Item6 {
+    grid-area: Item6;
+    
+}
