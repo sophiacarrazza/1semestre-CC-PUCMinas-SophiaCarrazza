@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <title>Filtro de Pesquisa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fstyle.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    
+    <header>
+      <div class="menu">
+          <div class="left-side-menu">
+              <div class="logo">
+                  <button onclick="returntohome()" style="border: none;">
+                      <img class="logo2" src="images/oldlogo2.png" style="height: 58px;">
+                      <img class="logo3" src="images/oldlogo3.png" style="height: 58px;">
+                      <script>
+                          function returntohome() {
+                              window.location.href = "index.html";
+                          }
+                      </script>
+                  </button>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="#">Não importa a idade, estar<br> na moda é se sentir bem na<br> própria pele.</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="right-side-menu">
+              <a href="favoritos.html" class="favoritos_button" style="height: 58px;">seus favoritos<img src="images/heart-saved.svg" style="height: 35px;" alt=""></a>
+              <a href="perfil.html" class="icon-avatar" ><img src="images/image-avatar.png" alt=""></a>
+          </div>
+      </div>
+      <div class="line"></div>
+  </header>
+  
+
+    <div class="wrapper">
+      <div class="titulodebusca">
+      <h1>Busca por eventos</h1>
+      <h3>Converse com nossa assistente virtual para encontrar peças estilosas e atuais de acordo com seu evento!</h3>
+      <!--<button id="open_cart_btn" onclick=" openCart()"><img src="images/icon-cart.svg" alt=""></button>-->
+    </div>
+      <section class="chat">
+        <div class="chat__message chat__message_A">
+          <div class="chat__content">
+            <p>Para qual evento você deseja se vestir? 
+              Clique em uma resposta desejada.</p>
+          </div>
+        </div>
+    
+        <div class="chat__message chat__message_A">
+          <div class="chat__content">
+            <p>Prazer! Sou a assistente Esmeralda. <br>
+              Irei te ajudar a encontrar a roupa perfeita!</p>
+          </div>
+        </div>
+      </section>
+      
+        <div id="search-container" style="display: none;">
+            <input type="search" id="search-input" placeholder="Pesquisar..."/>
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <div class="button-value filter-checkbox" onclick="filterProduct('tudo')">Tudo</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('calor')">Calor</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('frio')">Frio</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('casamento')">Casamento</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('casual')">Casual</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('formal')">Formal</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('branco')">Branco</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('preto')">Preto</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('colorido')">Colorido</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('feminino')">Feminino</div>
+            <div class="button-value filter-checkbox" onclick="filterProduct('masculino')">Masculino</div>
+            
+        </div>
+        
+        <section class="chat">
+            <div class="chat__message chat__message_A">
+              <div class="chat__content">
+                <p>Aqui estão os resultados de sua busca!</p>
+              </div>
+            </div>
+        
+
+          </section>
+       
+        <div id="products"> </div>
+      
+    <script src="fapp.js"></script>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+* {
+    margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   font-family: "Kumbh Sans", sans-serif;
+
+}
+
+/*parte do navbar*/
+header{
+    display:flex;
+    flex-direction: column;
+ }
+.menu{
+    display: flex;
+    justify-content: space-between; /* da o maior espaco possivel entre os elementos filhos (left side e right side do menu)*/
+    padding: 0 5%;
+    height:85px;
+    align-items: center;
+}
+
+.left-side-menu{
+    display:flex;
+    gap:50px;
+}
+
+.right-side-menu{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.logo3 {
+    display: none;
+}
+#open_cart_btn img{
+    width:30px;
+    margin-right: 10px;
+}
+
+.icon-avatar img{
+    width:50px;
+}
+.favoritos_button{
+    text-decoration: none;
+    color: black;
+    border-style:outset;
+    border-color: #f3b8b2;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* pra colocar align items e esses trem precisa ter display */
+    width: fit-content;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+nav ul li{
+    display:inline-block;
+    margin-right: 30px;
+    
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: #fa7f72;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.line{
+    height:1px;
+    background-color: #ddd;
+    width: 90%;
+    align-self: center;
+}
+.line2 {
+    height:1px;
+    background-color: #b4b2b2;
+    width: 90%;
+    align-self: center;
+    display:none
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+.titulodebusca{
+    margin-top: 30px;
+    
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input{
+    background-color: transparent;
+    width: 80%;
+    border-bottom: 2px solid #353434;
+    padding: 1em 0.3em;
+}
+
+#search-container input:focus{
+    border-bottom-color: #d17878;
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #353434;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+
+}
+#buttons{
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.button-value {
+    border: 2px solid #d17878;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #d17878;
+    cursor: pointer;
+    
+}
+
+.filter-checkbox{
+    border: 2px solid #d17878;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #d17878;
+    cursor: pointer;
+}
+
+
+.active {
+    background-color: #d17878;
+    color: #fff;
+}
+
+.filter-checkbox.active {
+    background-color: #d17878;
+    color: #fff;
+}
+
+.titulo{
+    margin-top: 20px;
+}
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2em;
+    padding: 2em 0;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(2, 3, 46, 0.1);
+}
+.image-container{
+    text-align: center;
+
+}
+
+img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+
+button{
+    margin: 0 0.15em;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0.3em 1em;
+
+}
+.vejamais{   
+    padding: 3px 7px;
+    background-color: #d17878;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none; 
+    border-radius: 8px;
+}
+
+.like{   
+    padding: 7px;
+    background-color: #353434;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none; 
+    border-radius: 8px;
+}
+
+.like2{
+    color: crimson;
+}
+
+.addcart{   
+    padding: 7px;
+    background-color: #353434;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none; 
+    border-radius: 8px;
+}
+
+.container{
+    padding-top: 1em;
+    color:#353434;
+}
+
+.container h5{
+    font-size: 0.9em;
+    font-weight:700;
+}
+.container h6{
+    font-size: 1em;
+    color: #c54a4a;
+    margin-top: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+*::before {
+    box-sizing: border-box;
+  }
+  
+  .chat {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40%;
+    overflow: hidden;
+    font: .90rem/1.5 Arial;
+    color: #313131;
+    margin-top: 0;
+    padding: 25px;
+  }
+  
+  .chat::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 40%;
+    width: 100%;
+    /*background: linear-gradient(to bottom, white 20%, rgba(255, 255, 255, 0)) repeat-x;*/
+  }
+  
+  .chat p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat__content {
+    flex: 0 1 auto;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    background: var(--bgcolor);
+    border-radius: var(--radius);
+    pointer-events: none;
+  }
+
+  .chat__content p{
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+  
+  .chat__message {
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+    transform-origin: 0 100%;
+    padding-top: 0;
+    transform: scale(0);
+    max-height: 0;
+    overflow: hidden;
+    animation: message 0.15s ease-out 0s forwards;
+    animation-delay: var(--delay);
+    --bgcolor: #d8d8d8;
+    --radius: 8px 8px 8px 0;
+  }
+  
+  .chat__message_A::before {
+    content: "";
+    flex: 0 0 40px;
+    aspect-ratio: 1/1;
+    background-image: url('images/avatar2.png');
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  @keyframes message {
+    0% {
+      max-height: 100vmax;
+    }
+  
+    80% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+      max-height: 100vmax;
+      overflow: visible;
+      padding-top: 1rem;
+    }
+  }
+
+
+
+
+@media only screen and (min-width:320px) and (max-width: 1024px) {
+    *{
+        margin: 1%;
+        box-sizing:border-box;
+        font-family: "Kumbh Sans", sans-serif;
+        margin-top: 0;
+     }
+     .menu{
+        display: flex;
+        justify-content: space-between; /* da o maior espaco possivel entre os elementos filhos (left side e right side do menu)*/
+        padding: 5%;
+        height:85px;
+        align-items: center;
+        margin-top: 45px;
+      
+    }
+     .logo2 {
+        display:none;
+    }
+     .logo3 {
+        display:block;
+        margin: 0%;
+    }
+
+    nav ul li a{
+        display: none;
+        
+    
+    }
+    .line2 {
+        display: inline-block;
+    }
+
+    .favoritos_button{
+        display: none;
+    }
+}
+@media screen and (max-width: 720px){
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card{
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products{
+        grid-template-columns: auto auto auto;
+        grid-column-gap: fit-content(2em);
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 940px){
+    
+    .button{
+        display: inline-flex;
+        
+    }
+    .vejamais {
+        display: block;
+      }
+
+}
+
+@media screen and (max-width: 500px){
+    #products{
+        grid-template-columns: auto auto ;
+        grid-column-gap: fit-content(1em);
+        
+    }
+    .chat__content p{
+        font-size: 1.1em;
+        font-weight: 600;
+    
+      }
+
+
+}
+
+@media only screen and (min-width:320px) and (max-width: 1024px) {
+    *{
+        margin: 1%;
+        box-sizing:border-box;
+        font-family: "Kumbh Sans", sans-serif;
+        margin-top: 0;
+     }
+     .menu{
+        display: flex;
+        justify-content: space-between; /* da o maior espaco possivel entre os elementos filhos (left side e right side do menu)*/
+        padding: 5%;
+        height:85px;
+        align-items: center;
+        margin-top: 45px;
+      
+    }
+     .logo2 {
+        display:none;
+    }
+     .logo3 {
+        display:block;
+        margin: 0%;
+    }
+
+    nav ul li a{
+        display: none;
+        
+    
+    }
+    .line2 {
+        display: inline-block;
+    }
+
+    .favoritos_button{
+        display: none;
+    }
+}
