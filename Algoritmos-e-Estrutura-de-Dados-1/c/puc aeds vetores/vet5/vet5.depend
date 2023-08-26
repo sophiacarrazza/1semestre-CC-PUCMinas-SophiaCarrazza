@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1681409328 source:d:\puc aeds vetores\vet5\main.c
+	<stdio.h>
+	<stdlib.h>
+

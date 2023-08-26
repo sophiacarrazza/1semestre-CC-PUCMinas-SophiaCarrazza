@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1685403574 source:d:\puc aeds vetores\teste\main.c
+	<stdio.h>
+	<stdlib.h>
+
