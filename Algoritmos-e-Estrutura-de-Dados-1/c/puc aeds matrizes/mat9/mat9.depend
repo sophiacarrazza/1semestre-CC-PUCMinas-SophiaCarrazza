@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1685400052 source:d:\puc aeds vetores\mat9\main.c
+	<stdio.h>
+	<stdlib.h>
+
