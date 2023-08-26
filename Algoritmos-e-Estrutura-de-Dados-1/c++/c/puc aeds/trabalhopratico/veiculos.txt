@@ -1,5 +1,0 @@
-4
-ABC7524;Chevrolet;2005;250000.00;carro;cinza
-MIA4325;Honda;2018;4000.00;moto;arranhao do lado direito
-FIO2558;Fiat;2020;35000.00;carro;vermelho com varios adesivos
-MIA2450;Porche;2019;2000000.00;carro;muito lindo
