@@ -1,0 +1,14 @@
+
+Carros Cadastrados:
+
+Carro 1:
+Marca: fiat
+Modelo: palio
+Cor: prata
+Ano: 2007
+
+Carro 2:
+Marca: mitsubishi
+Modelo: la
+Cor: preto
+Ano: 2018

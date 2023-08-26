@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1686850414 source:d:\puc aeds structs\struteste\main.c
+	<stdio.h>
+	<stdlib.h>
+

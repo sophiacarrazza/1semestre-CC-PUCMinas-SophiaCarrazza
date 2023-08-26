@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1685410582 source:d:\puc aeds strings\str9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
