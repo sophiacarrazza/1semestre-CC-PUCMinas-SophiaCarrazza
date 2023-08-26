@@ -1,0 +1,4 @@
+3
+ABC7524;Chevrolet;2005;250000.00;carro;cinza
+MIA4325;Honda;2018;4000.00;moto;arranhao do lado direito
+FIO2558;Susuki;2021;40000.00;carro;
