@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685055688 source:d:\puc aeds modularizacao\mod9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

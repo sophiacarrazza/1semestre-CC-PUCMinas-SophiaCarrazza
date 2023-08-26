@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1685063028 source:d:\puc aeds modularizacao\mod11\main.c
+	<stdio.h>
+	<stdlib.h>
+
