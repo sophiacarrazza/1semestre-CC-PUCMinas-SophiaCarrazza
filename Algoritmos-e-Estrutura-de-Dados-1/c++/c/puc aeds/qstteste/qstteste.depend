@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1685640000 source:d:\puc aeds\qstteste\main.c
+	<stdio.h>
+	<stdlib.h>
+
